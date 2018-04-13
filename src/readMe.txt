@@ -1,0 +1,1 @@
+s is a calorie tracker project based on Angular, it can track your daily nutrition supplement based on your daily intake. Enter what you eat, how much, then you will know how much calories you already took how much left that you are allowed to indigest today.
