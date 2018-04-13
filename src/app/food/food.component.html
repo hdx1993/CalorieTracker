@@ -1,0 +1,36 @@
+<section class="card" >
+  <div class="panel-body">
+    <div class="photo">
+      <!-- <img class="image" src= "assets/images/cucumber.png"> -->
+      <img class="image" [src]= food.image>
+
+    </div>
+    <table class="food-info">
+      <tr>
+        <td>
+          <h3 class = "name" >{{food.name}}</h3>
+          <ul>
+            <li class="description">Carlories: {{ food?.nf_calories }} kcal</li>
+            <li class="description">Sodium: {{ food?.nf_sodium}} g</li>
+            <li class="description">Protein: {{ food?.nf_protein}} g</li>
+            <li class="description">Carbohydrate: {{ food?.nf_total_carbohydrate}} g</li>
+
+          </ul>
+        </td>
+        <td>
+          <div class="select-quantity">
+            <button class="decrease" (click)="downQuantity()">-</button>
+            </div>
+            <div class="select-quantity">
+            <input class="number" type="text" [value]="food.quantity"
+            (input) = "food.quantity=$event.target.value">
+            </div>
+            <div class="select-quantity">
+            <button class="increase" (click)="upQuantity()">+</button>
+          </div>
+    
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>

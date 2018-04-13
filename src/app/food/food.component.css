@@ -1,0 +1,107 @@
+.card {
+  background: #44464c;
+  margin-bottom: 30px;
+  min-height: 40px;
+}
+
+.card.racing {
+  background: #24262c;
+}
+
+.button {
+  background: #fd79fc;
+  border-radius: 3px;
+  border: 0;
+  color: #ffffff;
+  width: 120px;
+}
+
+.select-quantity {
+  border: none;
+  display: table-cell;
+  height: 40px;
+  margin: 0px;
+  width: 40px;
+  text-align: center;
+  padding: 0;
+}
+.button-cancel {
+  background: none;
+  border: 0;
+  color: #fd79fc;
+  text-decoration: underline;
+  width: 120px;
+}
+
+.date, .price {
+  float: left;
+  color: #9397d8;
+}
+.increase, .decrease{
+  color: #9397d8;
+  border: none;
+  display: inline-table;
+  height: 30px;
+  margin: 0px;
+  width: 30px;
+  text-align: center;
+  padding: 0;
+}
+.image {
+  width: 180px;
+  height: 160px;
+}
+.description {
+  font-weight:bold;
+  color: #CEF6E3;
+}
+.name {
+  color: #D8F6CE;
+}
+.panel-body {
+  display: table;
+  padding: 0;
+}
+
+.photo {
+  float: center;
+  margin-right: 50px;
+}
+.number {
+  background: #000;
+  border: none;
+  display: table;
+  height: 30px;
+  margin: 0px;
+  width: 30px;
+  text-align: center;
+}
+
+.price {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  width: 200px;
+}
+
+.food-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.food-info h3 {
+  margin: 0 20;
+}
+
+.food-info td:last-child {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.food-info, .food-info tbody, .food-info tr, .food-info td {
+  width: 100%;
+}
+
+.food-info tbody {
+  display: inline-block;
+}
