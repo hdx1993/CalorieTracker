@@ -1,0 +1,46 @@
+<main class="container" role="main">
+
+	<table>
+		<tr>
+			<ul>
+				<th class="width1">Today's calories plan: <input type="text" class="cash" [value]="cash"
+				(input)="cash=$event.target.value">kcal</th>
+				<th class="width1">Today's sodium plan: <input type="text" class="cash" [value]="sodium"
+				(input)="sodium=$event.target.value">g</th>
+			</ul>
+		</tr>
+		<tr>
+			<ul>
+				<th class="width1">Today's carbohydrate plan: <input type="text" class="cash" [value]="carbo"
+				(input)="carbo=$event.target.value">g</th>
+				<th class="width1">Today's proteins plan: <input type="text" class="cash" [value]="protein"
+				(input)="protein=$event.target.value">g</th>
+			</ul>
+		</tr>		
+	</table>
+
+	<food *ngFor="let f of foods" [food] = "f"></food>
+
+	<table>
+		<tr>
+			<div>
+				<th class="width">Calories left: {{caloLeft()}} kcal</th>
+				<th class="width">Sodium left: {{sodiumLeft()}} g</th>
+				<th class="width">carbohydrate left: {{carboLeft()}} g</th> 
+				<th class="width">protein left: {{proteinLeft()}} g </th>
+			</div>
+		</tr>
+		<tr>
+			<div>
+			    <th class="width">Total kcal today: {{totalCost_calories()}} kcal</th>
+			    <th class="width">Total sodium today: {{totalCost_sodium()}} g</th>
+			    <th class="width">Total carbohydrate today: {{totalCost_carbo()}} g</th>
+			    <th class="width">Total protein today: {{totalCost_protein()}} g</th>
+
+			</div>
+		</tr>		
+	</table>
+
+</main>
+
+
